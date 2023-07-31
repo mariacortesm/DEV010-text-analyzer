@@ -3,11 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
+  <title>Analizador de texto - 1</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header>
+ <h1>Analizador de texto</h1>
+  </header>
+  <hr>
+<div> 
+  <ul class="container">
+    <li class="box" data-testid="word-count">Recuento de palabras</li>
+    <li class="box" data-testid="character-count">Recuento de caracteres</li>
+    <li class="box" data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos de puntuación</li>
+    <li class="box" data-testid="number-count">Recuento de números</li>
+    <li class="box" data-testid="number-sum">Suma total de números</li>
+    <li class="box" data-testid="word-length-average">Longitud media de palabras</li>
+  </ul>
+  </div>
+  <div>
+  <br>
+  <label for="ingresa">Ingresa tu texto:</label>  <br>
+  <br>
+  <textarea name="user-input" placeholder="Escribe..." rows="30" cols="90"></textarea>
+  <br>
+  </div>  
+ <button id="reset-button" type="reset">Limpiar valores</button>
   <script src="index.js" type="module"></script>
+
 </body>
+<footer>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <p>María Ximena Cortés</p>
+</footer>
 </html>
