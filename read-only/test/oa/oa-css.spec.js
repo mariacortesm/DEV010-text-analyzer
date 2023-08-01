@@ -1,15 +1,15 @@
-const fs = require('fs');
-const { JSDOM } = require('jsdom');
-const css = require('css');
+import { readFileSync } from 'fs';
+import { JSDOM } from 'jsdom';
+import { parse } from 'css';
 
-const html = fs.readFileSync('./src/index.html', 'utf-8');
+const html = readFileSync('./src/index.html', 'utf-8');
 const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;
 
 const stylesPath = document.querySelector('link[rel="stylesheet"]').getAttribute('href');
-const style = fs.readFileSync('./src/' + stylesPath, 'utf-8');
-const { rules } = css.parse(style).stylesheet;
+const style = readFileSync('./src/' + stylesPath, 'utf-8');
+const { rules } = parse(style).stylesheet;
 
 const BOX_MODEL_ATTRIBUTES = ['width', 'height', 'margin', 'padding', 'border', 'box-sizing', 'background'];
 
