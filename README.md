@@ -1,6 +1,7 @@
 # Analizador de texto
  El analizador de texto permite la entrada de texto que, simultaneamente, muestra el conteo de palabras, de caracters, de números, de longitud y suma total de números. Esto nos permite tener un conteo global de lo que el usuario está ingresando y, de igual forma, borrar todo el contenido con ayuda de un botón. 
 
+[Ver el video en RecCloud](https://reccloud.com/es/u/4jmscwm)
 
 ## Índice
 
