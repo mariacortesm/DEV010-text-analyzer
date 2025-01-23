@@ -4,6 +4,7 @@
 [![Vista previa del video](assets/miniatura.png)](https://reccloud.com/es/u/4jmscwm)
 
 
+
 ## Índice
 
 * [1. Planteamiento y organización del proyecto]
